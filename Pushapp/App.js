@@ -35,7 +35,7 @@ function App() {
   return (
     <SafeAreaView style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <View>
-        <Text>Hello App</Text>
+        <Text>React Native firebase push notification</Text>
       </View>
     </SafeAreaView>
   );

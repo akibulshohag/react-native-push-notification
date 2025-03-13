@@ -63,8 +63,8 @@ export const getToken = async () => {
 
 export const setupForegroundListener = () => {
   const unsubscribe = messaging().onMessage(async remoteMessage => {
-    console.log('A new FCM message arrived!', JSON.stringify(remoteMessage));
-    Alert.alert(JSON.stringify(remoteMessage))
+    console.log('A new FCM message arrived!', remoteMessage);
+    Alert.alert(remoteMessage?.notification?.title ,remoteMessage?.notification?.body)
   });
   return unsubscribe;
 };
